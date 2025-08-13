@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карта сайта - Княжество Северное Подвязново</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        #top-bar {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        #top-bar .container {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        #top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        #top-bar a:hover {
+            text-decoration: underline;
+        }
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #c8c8c8;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #header {
+            background-color: #004d99;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+        }
+        #header .logo {
+            width: 80px;
+            height: 80px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #004d99;
+            margin-right: 20px;
+        }
+        #header h1 {
+            font-size: 2.2em;
+            margin: 0;
+            font-weight: 300;
+        }
+        #header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            opacity: 0.8;
+        }
+        #nav {
+            background-color: #0066cc;
+            padding: 0 30px;
+            border-bottom: 5px solid #ffcc00;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        #nav ul li a:hover {
+            background-color: #0080ff;
+        }
+        #main-content {
+            padding: 30px;
+        }
+        h2 {
+            color: #004d99;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-weight: 300;
+        }
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+        }
+        .sitemap-list > li {
+            margin-bottom: 20px;
+        }
+        .sitemap-list > li > a {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #004d99;
+            text-decoration: none;
+        }
+        .sitemap-list > li > a:hover {
+            text-decoration: underline;
+        }
+        .sitemap-list ul {
+            list-style: none;
+            padding: 10px 0 0 20px;
+        }
+        .sitemap-list ul li a {
+            color: #0066cc;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        .sitemap-list ul li a:hover {
+            text-decoration: underline;
+        }
+        #footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            border-top: 5px solid #ffcc00;
+        }
+        #footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        #footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div id="top-bar">
+    <div class="container">
+        <a href="#">Карта сайта</a>
+        <a href="#">Версия для слабовидящих</a>
+    </div>
+</div>
+
+<div id="container">
+    <div id="header">
+        <div class="logo">СП</div>
+        <div>
+            <h1>Карта сайта</h1>
+            <p>Навигация по порталу государственных услуг</p>
+        </div>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="base.html">Главная</a></li>
+            <li><a href="vedomstva.html">Ведомства</a></li>
+            <li><a href="citisens.html">Гражданам</a></li>
+            <li><a href="organisation.html">Организациям</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <h2>Структура сайта</h2>
+        <p>
+            На этой странице вы можете найти ссылки на все основные разделы и страницы официального портала.
+        </p>
+
+        <ul class="sitemap-list">
+            <li><a href="base.html">Главная</a>
+                <ul>
+                    <li><a href="#services">Электронные услуги</a></li>
+                    <li><a href="#faq">Часто задаваемые вопросы</a></li>
+                </ul>
+            </li>
+            <li><a href="vedomstva.html">Ведомства</a>
+                <ul>
+                    <li><a href="vedomstva-zemskih-del.html">Ведомство Земских Дел</a></li>
+                    <li><a href="vedomstva-deneg.html">Ведомство Денег</a></li>
+                    <li><a href="https://www.np-gov.ru/%D0%BA%D0%B0%D0%BD%D1%86%D0%BB%D0%B5%D1%80/%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D1%81%D1%82%D0%B2%D0%BE-%D0%B1%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Ведомство Бдительности</a></li>
+                    <li><a href="sluzhba-vneshnei-razvedki.html">Служба Внешней Разведки</a></li>
+                </ul>
+            </li>
+            <li><a href="citisens.html">Гражданам</a>
+                <ul>
+                    <li><a href="citisens.html#passport-services">Паспортные и миграционные услуги</a></li>
+                    <li><a href="citisens.html#civil-registry">Регистрация актов гражданского состояния</a></li>
+                    <li><a href="citisens.html#financial-services">Финансовые и социальные услуги</a></li>
+                </ul>
+            </li>
+            <li><a href="organisation.html">Организациям</a>
+                <ul>
+                    <li><a href="organisation.html#reg-org">Регистрация юридического лица</a></li>
+                    <li><a href="organisation.html#tax-dec">Подача налоговой декларации</a></li>
+                    <li><a href="organisation.html#licensing">Запрос на получение лицензии</a></li>
+                </ul>
+            </li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        
+    </div>
+
+    <div id="footer">
+        <p>
+            &copy; 2024–2025 Княжество Северное Подвязново.<br>
+            Официальный портал государственных услуг.<br>
+            <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги для граждан - Княжество Северное Подвязново</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        #top-bar {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        #top-bar .container {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        #top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        #top-bar a:hover {
+            text-decoration: underline;
+        }
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #c8c8c8;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #header {
+            background-color: #004d99;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+        }
+        #header .logo {
+            width: 80px;
+            height: 80px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #004d99;
+            margin-right: 20px;
+        }
+        #header h1 {
+            font-size: 2.2em;
+            margin: 0;
+            font-weight: 300;
+        }
+        #header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            opacity: 0.8;
+        }
+        #nav {
+            background-color: #0066cc;
+            padding: 0 30px;
+            border-bottom: 5px solid #ffcc00;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        #nav ul li a:hover {
+            background-color: #0080ff;
+        }
+        #main-content {
+            padding: 30px;
+        }
+        h2 {
+            color: #004d99;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-weight: 300;
+        }
+        .service-category {
+            margin-bottom: 30px;
+        }
+        .service-category h3 {
+            color: #0066cc;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .service-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-item {
+            background-color: #f5f8fa;
+            border: 1px solid #e0e6ec;
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+        .service-item:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .service-item a {
+            text-decoration: none;
+            color: #004d99;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block;
+        }
+        .service-item a:hover {
+            text-decoration: underline;
+        }
+        #footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            border-top: 5px solid #ffcc00;
+        }
+        #footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        #footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div id="top-bar">
+    <div class="container">
+        <a href="#">Карта сайта</a>
+        <a href="#">Версия для слабовидящих</a>
+    </div>
+</div>
+
+<div id="container">
+    <div id="header">
+        <div class="logo">СП</div>
+        <div>
+            <h1>Услуги для граждан</h1>
+            <p>Официальный Портал Государственных Услуг</p>
+        </div>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="base.html">Главная</a></li>
+            <li><a href="vedomstva.html">Ведомства</a></li>
+            <li><a href="citisens.html">Гражданам</a></li>
+            <li><a href="organisation.html">Организациям</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <h2>Каталог услуг для граждан</h2>
+        <p>
+            На этой странице собраны наиболее востребованные электронные услуги для граждан. Выберите интересующую вас категорию.
+        </p>
+
+        <div class="service-category">
+            <h3>Паспортные и миграционные услуги</h3>
+            <div class="service-grid">
+                <div class="service-item">
+                    <a href="vedomstva-zemskih-del.html#citizenship">Получение гражданства</a>
+                </div>
+                <div class="service-item">
+                    <a href="vedomstva-zemskih-del.html">Получение паспорта</a>
+                </div>
+                <div class="service-item">
+                    <a href="vedomstva-zemskih-del.html#residence">Смена места жительства</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category">
+            <h3>Регистрация актов гражданского состояния</h3>
+            <div class="service-grid">
+                <div class="service-item">
+                    <a href="vedomstva-zemskih-del.html#birth-death">Регистрация рождения/смерти</a>
+                </div>
+                <div class="service-item">
+                    <a href="vedomstva-zemskih-del.html#marriage">Заявление на регистрацию брака</a>
+                </div>
+                <div class="service-item">
+                    <a href="#">Расторжение брака</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category">
+            <h3>Финансовые и социальные услуги</h3>
+            <div class="service-grid">
+                <div class="service-item">
+                    <a href="vedomstva-deneg.html">Уплата налогов</a>
+                </div>
+                <div class="service-item">
+                    <a href="vedomstva-deneg.html">Социальные выплаты</a>
+                </div>
+                <div class="service-item">
+                    <a href="vedomstva-deneg.html">Получение справок</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="footer">
+        <p>
+            &copy; 2024–2025 Княжество Северное Подвязново.<br>
+            Официальный портал государственных услуг.<br>
+            <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

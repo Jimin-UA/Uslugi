@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Официальный Портал Государственных Услуг</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        #top-bar {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        #top-bar .container {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        #top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        #top-bar a:hover {
+            text-decoration: underline;
+        }
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #c8c8c8;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #header {
+            background-color: #004d99;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+        }
+        #header .logo {
+            width: 80px;
+            height: 80px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #004d99;
+            margin-right: 20px;
+        }
+        #header h1 {
+            font-size: 2.2em;
+            margin: 0;
+            font-weight: 300;
+        }
+        #header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            opacity: 0.8;
+        }
+        #nav {
+            background-color: #0066cc;
+            padding: 0 30px;
+            border-bottom: 5px solid #ffcc00;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        #nav ul li a:hover {
+            background-color: #0080ff;
+        }
+        #main-content {
+            padding: 30px;
+        }
+        h2 {
+            color: #004d99;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-weight: 300;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .contact-item {
+            background-color: #f5f8fa;
+            border: 1px solid #e0e6ec;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-item .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #0066cc;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+        .contact-item h3 {
+            margin: 0;
+            color: #004d99;
+        }
+        .contact-item p {
+            margin: 5px 0 0;
+        }
+        .contact-item a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        #footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            border-top: 5px solid #ffcc00;
+        }
+        #footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        #footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div id="top-bar">
+    <div class="container">
+        <a href="#">Карта сайта</a>
+        <a href="#">Версия для слабовидящих</a>
+    </div>
+</div>
+
+<div id="container">
+    <div id="header">
+        <div class="logo">СП</div>
+        <div>
+            <h1>Официальный Портал Государственных Услуг</h1>
+            <p>Княжество Северное Подвязново</p>
+        </div>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="base.html">Главная</a></li>
+            <li><a href="vedomstva.html">Ведомства</a></li>
+            <li><a href="citisens.html">Гражданам</a></li>
+            <li><a href="organisation.html">Организациям</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <h2>Контакты</h2>
+        <p>
+            Для связи с официальными представителями Княжества и администрацией портала, используйте следующие контакты.
+        </p>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="icon">&#9993;</div>
+                <div>
+                    <h3>Канцелярия Княжества</h3>
+                    <p>
+                        Официальная почта для обращений в государственные ведомства:<br>
+                        <a href="mailto:gov@np-gov.ru">gov@np-gov.ru</a>
+                    </p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon">&#9993;</div>
+                <div>
+                    <h3>Связь с администрацией</h3>
+                    <p>
+                        Почта для вопросов, предложений и технических проблем по работе сайта:<br>
+                        <a href="mailto:chiminbangtanboys@gmail.com">chiminbangtanboys@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>
+            &copy; 2024–2025 Княжество Северное Подвязново.<br>
+            Официальный портал государственных услуг.<br>
+            <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ведомство Земских Дел - Княжество Северное Подвязново</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        #top-bar {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        #top-bar .container {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        #top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        #top-bar a:hover {
+            text-decoration: underline;
+        }
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #c8c8c8;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #header {
+            background-color: #004d99;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+        }
+        #header .logo {
+            width: 80px;
+            height: 80px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #004d99;
+            margin-right: 20px;
+        }
+        #header h1 {
+            font-size: 2.2em;
+            margin: 0;
+            font-weight: 300;
+        }
+        #header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            opacity: 0.8;
+        }
+        #nav {
+            background-color: #0066cc;
+            padding: 0 30px;
+            border-bottom: 5px solid #ffcc00;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        #nav ul li a:hover {
+            background-color: #0080ff;
+        }
+        #main-content {
+            padding: 30px;
+        }
+        h2 {
+            color: #004d99;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-weight: 300;
+        }
+        h3 {
+            color: #0066cc;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        .form-section {
+            background-color: #f5f8fa;
+            border: 1px solid #e0e6ec;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .form-section label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-section input[type="text"],
+        .form-section input[type="date"],
+        .form-section select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #c8c8c8;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-section button {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .form-section button:hover {
+            background-color: #004d99;
+        }
+        #footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            border-top: 5px solid #ffcc00;
+        }
+        #footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        #footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div id="top-bar">
+    <div class="container">
+        <a href="#">Карта сайта</a>
+        <a href="#">Версия для слабовидящих</a>
+    </div>
+</div>
+
+<div id="container">
+    <div id="header">
+        <div class="logo">СП</div>
+        <div>
+            <h1>Ведомство Земских Дел</h1>
+            <p>Княжество Северное Подвязново</p>
+        </div>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="base.html">Главная</a></li>
+            <li><a href="vedomstva.html">Ведомства</a></li>
+            <li><a href="citisens.html">Гражданам</a></li>
+            <li><a href="organisation.html">Организациям</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <h2>Услуги Ведомства Земских Дел</h2>
+        <p>
+            На этой странице вы можете подать электронные заявления по вопросам, находящимся в ведении Ведомства Земских Дел.
+        </p>
+
+        <div class="form-section">
+            <h3>Заявление на получение гражданства</h3>
+            <form action="#" onsubmit="alert('Заявление на гражданство подано! (Данные не отправляются)'); return false;">
+                <label for="name_citizen">ФИО:</label>
+                <input type="text" id="name_citizen" name="name_citizen" required>
+
+                <label for="birth_date_citizen">Дата рождения:</label>
+                <input type="date" id="birth_date_citizen" name="birth_date_citizen" required>
+
+                <label for="country_citizen">Гражданство:</label>
+                <input type="text" id="country_citizen" name="country_citizen" placeholder="Текущее гражданство" required>
+
+                <label for="reason_citizen">Основание для получения:</label>
+                <select id="reason_citizen" name="reason_citizen" required>
+                    <option value="">Выберите основание</option>
+                    <option value="birth">Рождение на территории</option>
+                    <option value="marriage">Брак с подданным</option>
+                    <option value="residence">Проживание более 5 лет</option>
+                    <option value="special">Особые заслуги</option>
+                </select>
+
+                <button type="submit">Подать заявление</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h3>Регистрация рождения или смерти</h3>
+            <form action="#" onsubmit="alert('Заявление на регистрацию подано! (Данные не отправляются)'); return false;">
+                <label for="full_name">ФИО:</label>
+                <input type="text" id="full_name" name="full_name" required>
+
+                <label for="event_type">Тип события:</label>
+                <select id="event_type" name="event_type" required>
+                    <option value="">Выберите тип события</option>
+                    <option value="birth">Рождение</option>
+                    <option value="death">Смерть</option>
+                </select>
+
+                <label for="event_date">Дата события:</label>
+                <input type="date" id="event_date" name="event_date" required>
+
+                <button type="submit">Подать заявление</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h3>Заявление на регистрацию брака</h3>
+            <form action="#" onsubmit="alert('Заявление на регистрацию брака подано! (Данные не отправляются)'); return false;">
+                <label for="partner1_name">ФИО заявителя 1:</label>
+                <input type="text" id="partner1_name" name="partner1_name" required>
+
+                <label for="partner2_name">ФИО заявителя 2:</label>
+                <input type="text" id="partner2_name" name="partner2_name" required>
+
+                <label for="marriage_date">Предполагаемая дата бракосочетания:</label>
+                <input type="date" id="marriage_date" name="marriage_date" required>
+
+                <button type="submit">Подать заявление</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h3>Заявление на смену места жительства</h3>
+            <form action="#" onsubmit="alert('Заявление на смену места жительства подано! (Данные не отправляются)'); return false;">
+                <label for="current_address">Текущий адрес:</label>
+                <input type="text" id="current_address" name="current_address" required>
+
+                <label for="new_address">Новый адрес:</label>
+                <input type="text" id="new_address" name="new_address" required>
+                
+                <button type="submit">Подать заявление</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <p>
+            &copy; 2024–2025 Княжество Северное Подвязново.<br>
+            Официальный портал государственных услуг.<br>
+            <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
