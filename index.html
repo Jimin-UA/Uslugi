@@ -1,8 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta http-equiv="refresh" content="0; url=Uslugi/base.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Официальный Портал Государственных Услуг Княжества Северное Подвязново</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        #top-bar {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        #top-bar .container {
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        #top-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        #top-bar a:hover {
+            text-decoration: underline;
+        }
+        #container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #c8c8c8;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #header {
+            background-color: #004d99;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+        }
+        #header .logo {
+            width: 80px;
+            height: 80px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #004d99;
+            margin-right: 20px;
+        }
+        #header h1 {
+            font-size: 2.2em;
+            margin: 0;
+            font-weight: 300;
+        }
+        #header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            opacity: 0.8;
+        }
+        #nav {
+            background-color: #0066cc;
+            padding: 0 30px;
+            border-bottom: 5px solid #ffcc00;
+        }
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        #nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        #nav ul li a:hover {
+            background-color: #0080ff;
+        }
+        #main-content {
+            padding: 30px;
+            display: flex;
+            gap: 30px;
+        }
+        .main-column {
+            flex: 3;
+        }
+        .sidebar-column {
+            flex: 1;
+        }
+        h2 {
+            color: #004d99;
+            border-bottom: 2px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-weight: 300;
+        }
+        .service-group {
+            margin-bottom: 30px;
+        }
+        .service-group h3 {
+            background-color: #f0f4f7;
+            padding: 15px;
+            margin: 0;
+            font-weight: bold;
+            color: #004d99;
+            border-left: 5px solid #0066cc;
+        }
+        .service-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .service-list li {
+            border-bottom: 1px solid #e0e6ec;
+        }
+        .service-list a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .service-list a:hover {
+            background-color: #f5f8fa;
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        .info-box {
+            background-color: #f5f8fa;
+            border: 1px solid #e0e6ec;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            cursor: pointer;
+            border-bottom: 1px solid #e0e6ec;
+            padding: 10px 0;
+        }
+        .faq-item summary {
+            font-weight: bold;
+            color: #0066cc;
+            outline: none;
+        }
+        .faq-item p {
+            padding: 5px 0 0 15px;
+        }
+        #footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            border-top: 5px solid #ffcc00;
+        }
+        #footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        #footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+
+<div id="top-bar">
+    <div class="container">
+        <a href="#">Карта сайта</a>
+        <a href="#">Версия для слабовидящих</a>
+    </div>
+</div>
+
+<div id="container">
+    <div id="header">
+        <div class="logo">СП</div>
+        <div>
+            <h1>Официальный Портал Государственных Услуг</h1>
+            <p>Княжество Северное Подвязново</p>
+        </div>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="base.html">Главная</a></li>
+            <li><a href="vedomstva.html">Ведомства</a></li>
+            <li><a href="citisens.html">Гражданам</a></li>
+            <li><a href="organisation.html">Организациям</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <div class="main-column">
+            <h2>Электронные услуги для граждан</h2>
+            <p>
+                Добро пожаловать на официальный портал государственных услуг Княжества Северное Подвязново. Здесь вы можете найти всю необходимую информацию и подать заявления онлайн.
+            </p>
+
+            <div class="service-group">
+                <h3>Ведомство Земских Дел</h3>
+                <ul class="service-list">
+                    <li><a href="#">Получение паспорта</a></li>
+                    <li><a href="#">Регистрация рождения/смерти</a></li>
+                    <li><a href="#">Заявление на регистрацию брака</a></li>
+                    <li><a href="#">Смена места жительства</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <h3>Ведомство Денег</h3>
+                <ul class="service-list">
+                    <li><a href="#">Уплата налогов</a></li>
+                    <li><a href="#">Получение справок о доходах</a></li>
+                    <li><a href="#">Субсидии и социальные выплаты</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <h3>Ведомство Бдительности</h3>
+                <ul class="service-list">
+                    <li><a href="#">Подача заявлений и обращений</a></li>
+                    <li><a href="#">Сведения о правонарушениях</a></li>
+                    <li><a href="#">Информация о расследованиях</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar-column">
+            <h2>Важная информация</h2>
+            <div class="info-box">
+                <h4>График работы</h4>
+                <p>
+                    Портал доступен 24/7. Отделения ведомств работают с понедельника по пятницу с 9:00 до 18:00.
+                </p>
+            </div>
+            <div class="info-box">
+                <h4>Свяжитесь с нами</h4>
+                <p>
+                    Телефон: +7 (495) 000-00-00<br>
+                    Email: info@sp-gov.gov
+                </p>
+            </div>
+            <div class="info-box">
+                <h4>Часто задаваемые вопросы</h4>
+                <details class="faq-item">
+                    <summary>Как подать заявление?</summary>
+                    <p>Заявление можно подать по специальной форме в ведомство, которое вас интересует.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Какие документы нужны?</summary>
+                    <p>Документы, которые необходимо предоставить, будут указаны в специальной форме для подачи заявления.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Статус моего обращения?</summary>
+                    <p>Вы можете отследить статус вашего обращения, указав уникальный номер, который был предоставлен вам при подаче заявления.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>
+            &copy; 2024–2025 Княжество Северное Подвязново.<br>
+            Официальный портал государственных услуг.<br>
+            <a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a>
+        </p>
+    </div>
+</div>
+
 </body>
+
 </html>
